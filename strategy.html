@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+	<link rel="stylesheet" href="./css/normalize.css">
+	<link rel="stylesheet" href="./css/myStyle.css">
+	
+	<link href="https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Quicksand|Zhi+Mang+Xing&display=swap" rel="stylesheet">
+
+	<title>Monte sua Estratégia</title>
+</head>
+
+<body>
+
+	<img class="img-background" src="./img/background.jpg" alt="background" width="100%" height="100%">
+
+	<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-custom">
+		<a class="navbar-brand" href="index.html#home"><img class="img-logo" href="index.html#home" src="./img/logo2.png" alt="logo"></a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsCabecalho" aria-controls="navbarsCabecalho" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<div class="collapse navbar-collapse" id="navbarsCabecalho">
+			<ul class="navbar-nav mr-auto">
+				<li class="nav-item"><a class="nav-link" href="index.html#home">Home <span class="sr-only">(current)</span></a></li>
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" id="dropdownMenuInfo" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Informações</a>
+					<div class="dropdown-menu" aria-labelledby="dropdownMenuInfo">
+						<a class="dropdown-item" href="modes.html#modos">Modos</a>
+						<a class="dropdown-item" href="maps.html#mapas">Mapas</a>
+						<a class="dropdown-item" href="camps.html#campeonatos">Campeonatos</a>
+						<a class="dropdown-item" href="pros.html#profissonais">Jogadores Profissionais</a>
+					</div>
+				</li>
+				<li class="nav-item dropdown active">
+					<a class="nav-link dropdown-toggle" href="#" id="dropdownMenuFerramentas" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Ferramentas</a>
+					<div class="dropdown-menu" aria-labelledby="dropdownMenuFerramentas">
+						<a class="dropdown-item active" href="strategy.html#estrategia">Monte sua Estratégia</a>
+						<a class="dropdown-item" href="calculadora.html#calculadora">Calculadora</a>
+					</div>
+				</li>
+			</ul>
+			<ul class="navbar-nav">
+				<li class="nav-item"><a class="nav-link" href="contact.html#contato">Contato</a></li>
+				<li class="nav-item"><a class="nav-link" href="about.html#sobre">Sobre</a></li>
+			</ul>
+		</div>
+	</nav>
+
+	<main role="main">
+
+		<div id="content">
+
+			<h1>Monte sua Estratégia</h1>
+			<section id="strategy">
+
+				<div class="select-zone">
+					<label for="estrategyMap">Mapa</label>
+					<select id="estrategyMap" name="estrategyMap">
+						<option value="" selected>Selecione</option>
+						<option value="Cache">Cache</option>
+						<option value="Dust 2">Dust 2</option>
+						<option value="Inferno">Inferno</option>
+						<option value="Mirage">Mirage</option>
+						<option value="Overpass">Overpass</option>
+						<option value="Train">Train</option>
+					</select>
+				</div>
+
+				<div class="strategy-container">
+					<div class="draggable char-zone" wm-dropzone>
+						<h3>CT</h3>
+						<img id="ct1" class="item img-item" src="./img/strategy/ct1.png">
+						<img id="ct2" class="item img-item" src="./img/strategy/ct1.png">
+						<img id="ct3" class="item img-item" src="./img/strategy/ct1.png">
+						<img id="ct4" class="item img-item" src="./img/strategy/ct1.png">
+						<img id="ct5" class="item img-item" src="./img/strategy/ct1.png">
+					</div>
+
+					<div class="droppable map-zone" wm-dropzone>
+						<img id="map_cache" class="mapa img-mapa" src="./img/strategy/map_cache.png" wm-dropzone>
+						<img id="map_dust2" class="mapa img-mapa" src="./img/strategy/map_dust2.png" wm-dropzone>
+						<img id="map_inferno" class="mapa img-mapa" src="./img/strategy/map_inferno.png" wm-dropzone>
+						<img id="map_mirage" class="mapa img-mapa" src="./img/strategy/map_mirage.png" wm-dropzone>
+						<img id="map_overpass" class="mapa img-mapa" src="./img/strategy/map_overpass.png" wm-dropzone>
+						<img id="map_train" class="mapa img-mapa" src="./img/strategy/map_train.png" wm-dropzone>
+					</div>
+
+					<div class="draggable char-zone" wm-dropzone>
+						<h3>TR</h3>
+						<img id="tr1" class="item img-item" src="./img/strategy/tr1.png">
+						<img id="tr2" class="item img-item" src="./img/strategy/tr1.png">
+						<img id="tr3" class="item img-item" src="./img/strategy/tr1.png">
+						<img id="tr4" class="item img-item" src="./img/strategy/tr1.png">
+						<img id="tr5" class="item img-item" src="./img/strategy/tr1.png">
+					</div>
+				</div>
+
+			</section>
+
+			<footer id="footer">
+				<p class="msg-rodape">&copy; infoStrike 2019. Todos os direitos reservados.</p>
+				<p class="msg-rodape">lucasmirandatws@gmail.com | (19) 99804 9531</p>
+			</footer>
+
+		</div>
+
+	</main>
+
+	<script>
+		
+		$(".char-zone").hide();
+		$(".map-zone").hide();
+
+		// https://stackoverflow.com/questions/5735270/revert-a-jquery-draggable-object-back-to-its-original-container-on-out-event-of
+		$(".item").draggable({
+			revert : function(event, ui) {
+
+				$(this).data("uiDraggable").originalPosition = {
+					top : 0,
+					left : 0
+				};
+
+				return !event;
+
+			}
+		});
+
+		$('.mapa').droppable({
+			accept: '.item',
+			drop: function (event, ui) {
+			},
+			out: function (event, ui) {
+			}
+		})
+
+		$("#estrategyMap").change(function() {
+			var option = this.value;
+			
+			$(".char-zone").show();
+			$(".map-zone").show();
+			$(".item").css({
+				'left': 0,
+				'top': 0
+			});
+
+			$("#map_cache").hide();
+			$("#map_dust2").hide();
+			$("#map_inferno").hide();
+			$("#map_mirage").hide();
+			$("#map_overpass").hide();
+			$("#map_train").hide();
+
+			switch(option)
+			{
+				case 'Cache':
+				{
+					$("#map_cache").show();
+
+					break;
+				}
+
+				case 'Dust 2':
+				{
+					$("#map_dust2").show();
+
+					break;
+				}
+
+				case 'Inferno':
+				{
+					$("#map_inferno").show();
+
+					break;
+				}
+
+				case 'Mirage':
+				{
+					$("#map_mirage").show();
+
+					break;
+				}
+
+				case 'Overpass':
+				{
+					$("#map_overpass").show();
+
+					break;
+				}
+
+				case 'Train':
+				{
+					$("#map_train").show();
+
+					domtoimage.toJpeg(document.getElementById('#map_train'), { quality: 0.95 })
+					.then(function (dataUrl) {
+						var link = document.createElement('a');
+						link.download = 'my-image-name.jpeg';
+						link.href = dataUrl;
+						link.click();
+					});
+
+					break;
+				}
+
+				default:
+				{
+					$(".char-zone").hide();
+					$(".map-zone").hide();
+				}
+			}
+		});
+
+		$('.item').click(function() {
+			var item = $(this);
+
+			if (!item.data('clicked')) {
+				console.log('first click');
+			} else {
+				var item_esp = '#' + this.id;
+
+				$(item_esp).css({
+					'left': 0,
+					'top': 0
+				});
+			}
+			item.data('clicked', true);
+		});
+
+	</script>
+
+</body>
+
+</html>

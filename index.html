@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+	<link rel="stylesheet" href="./css/normalize.css">
+	<link rel="stylesheet" href="./css/myStyle.css">
+	
+	<link href="https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Quicksand|Zhi+Mang+Xing&display=swap" rel="stylesheet">
+
+	<title>Home</title>
+</head>
+
+<body>
+
+	<img class="img-background" src="./img/background.jpg" alt="background" width="100%" height="100%">
+
+	<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-custom">
+		<a class="navbar-brand" href="index.html#home"><img class="img-logo" href="index.html#home" src="./img/logo2.png" alt="logo"></a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsCabecalho" aria-controls="navbarsCabecalho" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<div class="collapse navbar-collapse" id="navbarsCabecalho">
+			<ul class="navbar-nav mr-auto">
+				<li class="nav-item active"><a class="nav-link" href="index.html#home">Home <span class="sr-only">(current)</span></a></li>
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" id="dropdownMenuInfo" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Informações</a>
+					<div class="dropdown-menu" aria-labelledby="dropdownMenuInfo">
+						<a class="dropdown-item" href="modes.html#modos">Modos</a>
+						<a class="dropdown-item" href="maps.html#mapas">Mapas</a>
+						<a class="dropdown-item" href="camps.html#campeonatos">Campeonatos</a>
+						<a class="dropdown-item" href="pros.html#profissonais">Jogadores Profissionais</a>
+					</div>
+				</li>
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" id="dropdownMenuFerramentas" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Ferramentas</a>
+					<div class="dropdown-menu" aria-labelledby="dropdownMenuFerramentas">
+						<a class="dropdown-item" href="strategy.html#estrategia">Monte sua Estratégia</a>
+						<a class="dropdown-item" href="calculadora.html#calculadora">Calculadora</a>
+					</div>
+				</li>
+			</ul>
+			<ul class="navbar-nav">
+				<li class="nav-item"><a class="nav-link" href="contact.html#contato">Contato</a></li>
+				<li class="nav-item"><a class="nav-link" href="about.html#sobre">Sobre</a></li>
+			</ul>
+		</div>
+	</nav>
+
+	<main role="main">
+
+		<div id="content">
+
+			<h1>infoStrike</h1>
+			<section id="intro">
+				<p>
+					O Counter-Strike: Global Offensive (CS:GO) é a continuação do jogo de equipas cheio de ação que foi pioneiro quando foi lançado há 12 anos atrás.
+
+					O CS: GO apresenta-se com novos mapas, personagens, armas e ainda oferece versões atualizadas de conteúdo do CS clássico (de_dust, etc.). Para além disso, o CS:GO introduz novos modos de jogo, matchmaking, tabelas de classificação e muito mais.
+				</p>
+
+				<iframe class="vid-intro" src="https://www.youtube.com/embed/i7NZ7pUV8iY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</section>
+
+			<section id="carousel">
+				<div id="carouselHome" class="carousel slide" data-ride="carousel">
+					<ol class="carousel-indicators">
+						<li data-target="#carouselHome" data-slide-to="0" class="active"></li>
+						<li data-target="#carouselHome" data-slide-to="1"></li>
+						<li data-target="#carouselHome" data-slide-to="2"></li>
+					</ol>
+					<div class="carousel-inner">
+						<div class="carousel-item active">
+							<img class="d-block w-100 img-carousel" src="./img/csgo1.jpg" alt="Primeiro slide">
+						</div>
+						<div class="carousel-item">
+							<img class="d-block w-100 img-carousel" src="./img/csgo2.jpg" alt="Segundo slide">
+						</div>
+						<div class="carousel-item">
+							<img class="d-block w-100 img-carousel" src="./img/csgo3.jpg" alt="Terceiro slide">
+						</div>
+					</div>
+					<a class="carousel-control-prev" href="#carouselHome" role="button" data-slide="prev">
+						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						<span class="sr-only">Anterior</span>
+					</a>
+					<a class="carousel-control-next" href="#carouselHome" role="button" data-slide="next">
+						<span class="carousel-control-next-icon" aria-hidden="true"></span>
+						<span class="sr-only">Próximo</span>
+					</a>
+				</div>
+			</section>
+
+			<h1>História</h1>
+			<section id="historia">
+				<div class="flex-container">
+					<p>
+						Em 1999, o Counter-Strike foi lançado como uma modificação do jogo Half-Life. À medida que o Counter-Strike progrediu desde uma versão Beta até a um jogo completo lançado comercialmente, a jogabilidade clássica foi melhorada para algo que definiu os jogos de tiros competitivos e acabou por criar uma comunidade de jogadores dedicados que têm vindo a seguir o jogo durante mais de uma década.
+
+						Ao longo de cada uma das suas versões, (1.6, Source e Global Offensive) o Counter-Strike tem vindo a ser o ponto de referência definitivo do nível de perícia de um jogador. Equipas de todo o mundo estão constantemente a demonstrar as suas habilidades e estratégias em torneios locais, nacionais e internacionais.
+
+						Pode-se dizer que bastantes jogadores profissionais de Counter-Strike são autênticas lendas na comunidade internacional de jogos competitivos. Abaixo podes ver alguns vídeos sobre estes jogadores e como eles moldaram a História do Counter-Strike.
+					</p>
+				</div>
+				<div class="flex-container">
+					<img class="img-ss-historia" src="./img/old1.jpg" alt="half-life">
+					<img class="img-ss-historia" src="./img/old2.jpg" alt="cs 1.5">
+					<img class="img-ss-historia" src="./img/old3.jpg" alt="cs 1.6">
+					<img class="img-ss-historia" src="./img/old4.jpg" alt="cs source">
+				</div>
+			</section>
+			
+			<section id="jogo">
+				<iframe class="widget-steam"src="https://store.steampowered.com/widget/730/" frameborder="0" width="646" height="190"></iframe>
+			</section>
+
+			<footer id="footer">
+				<p class="msg-rodape">&copy; infoStrike 2019. Todos os direitos reservados.</p>
+				<p class="msg-rodape">lucasmirandatws@gmail.com | (19) 99804 9531</p>
+			</footer>
+		</div>
+
+	</main>
+
+</body>
+
+</html>

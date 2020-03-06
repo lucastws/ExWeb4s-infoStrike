@@ -1,0 +1,97 @@
+@font-face {
+    font-family: "Open24";
+    src: url("../font/Open_24_Display_St.ttf");
+}
+
+main {
+	display: flex;
+	justify-content: space-around;
+}
+
+main * {
+	margin: 0rem;
+}
+
+body {
+	font-family: 'Quicksand', sans-serif;
+}
+
+#content_calculadora {
+	margin-top: 1vw;
+	margin-bottom: 1vw;
+	margin-left: calc(48% - 100px); 
+	margin-right: calc(48% - 100px);
+	padding: 10px;
+	background-color: #141414;
+	color: white;
+	border-radius: 15px;
+}
+
+.secao {
+	margin: 5px;
+	padding: 5px;
+	border: 1px double black;
+	text-align: center;
+	font-size: 1em;
+}
+
+#Inp_Display {
+	font-family: 'Open24', sans-serif;
+	font-size: 2rem;
+	text-align: right;
+	padding-right: 8px;
+	height: 2em; 
+	width: calc(100% - 8px);
+	background:rgba(56,62,37,1);
+	box-shadow:
+	inset 1px 1px 3px 0px #050505,
+	0px 0px 2px 1px #000,
+	0px 0px 2px 1px #777;
+	border:none;
+}
+
+button.btn-calc {
+	background-color: #292929;
+	color: white;
+	border-radius: 5px;
+	font-size: 1rem;
+
+	height: 100%;
+	width: 1vmax;
+	min-width: 100%;
+}
+
+button.btn-on {
+	background-color: #1aa399;
+	border-radius: 100%;
+	font-size: 0.6rem;
+}
+
+button.btn-mrc {
+	background-color: #b8b828;
+	border-radius: 100%;
+	font-size: 0.9rem;
+}
+
+button.btn-off {
+	font-size: 0.9rem;
+}
+
+button.btn-adicao {
+	background-color: #1aa399;
+}
+
+#flex_2_linha {
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	height: 60px;
+}
+.div-2l-normal {
+	flex: 0 0 25px;
+	margin: 2.5px;
+}
+.div-2l-normal.maior {
+	flex-basis: 55px;
+}

@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+	<link rel="stylesheet" href="./css/normalize.css">
+	<link rel="stylesheet" href="./css/myStyle.css">
+	
+	<link href="https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Quicksand|Zhi+Mang+Xing&display=swap" rel="stylesheet">
+
+	<title>Contato</title>
+</head>
+
+<body>
+
+	<img class="img-background" src="./img/background.jpg" alt="background" width="100%" height="100%">
+
+	<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-custom">
+		<a class="navbar-brand" href="index.html#home"><img class="img-logo" href="index.html#home" src="./img/logo2.png" alt="logo"></a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsCabecalho" aria-controls="navbarsCabecalho" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<div class="collapse navbar-collapse" id="navbarsCabecalho">
+			<ul class="navbar-nav mr-auto">
+				<li class="nav-item"><a class="nav-link" href="index.html#home">Home <span class="sr-only">(current)</span></a></li>
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" id="dropdownMenuInfo" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Informações</a>
+					<div class="dropdown-menu" aria-labelledby="dropdownMenuInfo">
+						<a class="dropdown-item" href="modes.html#modos">Modos</a>
+						<a class="dropdown-item" href="maps.html#mapas">Mapas</a>
+						<a class="dropdown-item" href="camps.html#campeonatos">Campeonatos</a>
+						<a class="dropdown-item" href="pros.html#profissonais">Jogadores Profissionais</a>
+					</div>
+				</li>
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" id="dropdownMenuFerramentas" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Ferramentas</a>
+					<div class="dropdown-menu" aria-labelledby="dropdownMenuFerramentas">
+						<a class="dropdown-item" href="strategy.html#estrategia">Monte sua Estratégia</a>
+						<a class="dropdown-item" href="calculadora.html#calculadora">Calculadora</a>
+					</div>
+				</li>
+			</ul>
+			<ul class="navbar-nav">
+				<li class="nav-item active"><a class="nav-link" href="contact.html#contato">Contato</a></li>
+				<li class="nav-item"><a class="nav-link" href="about.html#sobre">Sobre</a></li>
+			</ul>
+		</div>
+	</nav>
+
+	<main role="main">
+
+		<div id="content">
+
+			<h1>Contato</h1>
+			<section id="form">
+				<div class="form-container">
+					<form id="frmContato" name="frmContato" action="./img/background.jpg">
+						<label for="formNome">Nome</label>
+						<input type="text" id="formNome" name="formNome" placeholder="Felipe Dylon" required>
+						<p id="alerta_nome" class="msg-erro"></p>
+
+						<label for="formEmail">E-mail</label>
+						<input type="email" id="formEmail" name="formEmail" placeholder="felipe@dylon.com" required>
+						<p id="alerta_email" class="msg-erro"></p>
+
+						<label for="formPais">País</label>
+						<select id="formPais" name="formPais" required>
+							<option value="" selected>Selecione</option>
+							<option value="África do Sul">África do Sul</option>
+							<option value="Albânia">Albânia</option>
+							<option value="Alemanha">Alemanha</option>
+							<option value="Andorra">Andorra</option>
+							<option value="Angola">Angola</option>
+							<option value="Anguilla">Anguilla</option>
+							<option value="Antigua">Antigua</option>
+							<option value="Arábia Saudita">Arábia Saudita</option>
+							<option value="Argentina">Argentina</option>
+							<option value="Armênia">Armênia</option>
+							<option value="Aruba">Aruba</option>
+							<option value="Austrália">Austrália</option>
+							<option value="Áustria">Áustria</option>
+							<option value="Azerbaijão">Azerbaijão</option>
+							<option value="Bahamas">Bahamas</option>
+							<option value="Bahrein">Bahrein</option>
+							<option value="Bangladesh">Bangladesh</option>
+							<option value="Barbados">Barbados</option>
+							<option value="Bélgica">Bélgica</option>
+							<option value="Benin">Benin</option>
+							<option value="Bermudas">Bermudas</option>
+							<option value="Botsuana">Botsuana</option>
+							<option value="Brasil">Brasil</option>
+							<option value="Brunei">Brunei</option>
+							<option value="Bulgária">Bulgária</option>
+							<option value="Burkina Fasso">Burkina Fasso</option>
+							<option value="botão">Botão</option>
+							<option value="Cabo Verde">Cabo Verde</option>
+							<option value="Camarões">Camarões</option>
+							<option value="Camboja">Camboja</option>
+							<option value="Canadá">Canadá</option>
+							<option value="Cazaquistão">Cazaquistão</option>
+							<option value="Chade">Chade</option>
+							<option value="Chile">Chile</option>
+							<option value="China">China</option>
+							<option value="Cidade do Vaticano">Cidade do Vaticano</option>
+							<option value="Colômbia">Colômbia</option>
+							<option value="Congo">Congo</option>
+							<option value="Coréia do Sul">Coréia do Sul</option>
+							<option value="Costa do Marfim">Costa do Marfim</option>
+							<option value="Costa Rica">Costa Rica</option>
+							<option value="Croácia">Croácia</option>
+							<option value="Dinamarca">Dinamarca</option>
+							<option value="Djibuti">Djibuti</option>
+							<option value="Dominica">Dominica</option>
+							<option value="EUA">EUA</option>
+							<option value="Egito">Egito</option>
+							<option value="El Salvador">El Salvador</option>
+							<option value="Emirados Árabes">Emirados Árabes</option>
+							<option value="Equador">Equador</option>
+							<option value="Eritréia">Eritréia</option>
+							<option value="Escócia">Escócia</option>
+							<option value="Eslováquia">Eslováquia</option>
+							<option value="Eslovênia">Eslovênia</option>
+							<option value="Espanha">Espanha</option>
+							<option value="Estônia">Estônia</option>
+							<option value="Etiópia">Etiópia</option>
+							<option value="Fiji">Fiji</option>
+							<option value="Filipinas">Filipinas</option>
+							<option value="Finlândia">Finlândia</option>
+							<option value="França">França</option>
+							<option value="Gabão">Gabão</option>
+							<option value="Gâmbia">Gâmbia</option>
+							<option value="Gana">Gana</option>
+							<option value="Geórgia">Geórgia</option>
+							<option value="Gibraltar">Gibraltar</option>
+							<option value="Granada">Granada</option>
+							<option value="Grécia">Grécia</option>
+							<option value="Guadalupe">Guadalupe</option>
+							<option value="Guam">Guam</option>
+							<option value="Guatemala">Guatemala</option>
+							<option value="Guiana">Guiana</option>
+							<option value="Guiana Francesa">Guiana Francesa</option>
+							<option value="Guiné-bissau">Guiné-bissau</option>
+							<option value="Haiti">Haiti</option>
+							<option value="Holanda">Holanda</option>
+							<option value="Honduras">Honduras</option>
+							<option value="Hong Kong">Hong Kong</option>
+							<option value="Hungria">Hungria</option>
+							<option value="Iêmen">Iêmen</option>
+							<option value="Ilhas Cayman">Ilhas Cayman</option>
+							<option value="Ilhas Cook">Ilhas Cook</option>
+							<option value="Ilhas Curaçao">Ilhas Curaçao</option>
+							<option value="Ilhas Marshall">Ilhas Marshall</option>
+							<option value="Ilhas Turks & Caicos">Ilhas Turks & Caicos</option>
+							<option value="Ilhas Virgens (brit.)">Ilhas Virgens (brit.)</option>
+							<option value="Ilhas Virgens(amer.)">Ilhas Virgens(amer.)</option>
+							<option value="Ilhas Wallis e Futuna">Ilhas Wallis e Futuna</option>
+							<option value="Índia">Índia</option>
+							<option value="Indonésia">Indonésia</option>
+							<option value="Inglaterra">Inglaterra</option>
+							<option value="Irlanda">Irlanda</option>
+							<option value="Islândia">Islândia</option>
+							<option value="Israel">Israel</option>
+							<option value="Itália">Itália</option>
+							<option value="Jamaica">Jamaica</option>
+							<option value="Japão">Japão</option>
+							<option value="Jordânia">Jordânia</option>
+							<option value="Kuwait">Kuwait</option>
+							<option value="Latvia">Latvia</option>
+							<option value="Líbano">Líbano</option>
+							<option value="Liechtenstein">Liechtenstein</option>
+							<option value="Lituânia">Lituânia</option>
+							<option value="Luxemburgo">Luxemburgo</option>
+							<option value="Macau">Macau</option>
+							<option value="Macedônia">Macedônia</option>
+							<option value="Madagascar">Madagascar</option>
+							<option value="Malásia">Malásia</option>
+							<option value="Malaui">Malaui</option>
+							<option value="Mali">Mali</option>
+							<option value="Malta">Malta</option>
+							<option value="Marrocos">Marrocos</option>
+							<option value="Martinica">Martinica</option>
+							<option value="Mauritânia">Mauritânia</option>
+							<option value="Mauritius">Mauritius</option>
+							<option value="México">México</option>
+							<option value="Moldova">Moldova</option>
+							<option value="Mônaco">Mônaco</option>
+							<option value="Montserrat">Montserrat</option>
+							<option value="Nepal">Nepal</option>
+							<option value="Nicarágua">Nicarágua</option>
+							<option value="Niger">Niger</option>
+							<option value="Nigéria">Nigéria</option>
+							<option value="Noruega">Noruega</option>
+							<option value="Nova Caledônia">Nova Caledônia</option>
+							<option value="Nova Zelândia">Nova Zelândia</option>
+							<option value="Omã">Omã</option>
+							<option value="Palau">Palau</option>
+							<option value="Panamá">Panamá</option>
+							<option value="Papua-nova Guiné">Papua-nova Guiné</option>
+							<option value="Paquistão">Paquistão</option>
+							<option value="Peru">Peru</option>
+							<option value="Polinésia Francesa">Polinésia Francesa</option>
+							<option value="Polônia">Polônia</option>
+							<option value="Porto Rico">Porto Rico</option>
+							<option value="Portugal">Portugal</option>
+							<option value="Qatar">Qatar</option>
+							<option value="Quênia">Quênia</option>
+							<option value="Rep. Dominicana">Rep. Dominicana</option>
+							<option value="Rep. Tcheca">Rep. Tcheca</option>
+							<option value="Reunion">Reunion</option>
+							<option value="Romênia">Romênia</option>
+							<option value="Ruanda">Ruanda</option>
+							<option value="Rússia">Rússia</option>
+							<option value="Saipan">Saipan</option>
+							<option value="Samoa Americana">Samoa Americana</option>
+							<option value="Senegal">Senegal</option>
+							<option value="Serra Leone">Serra Leone</option>
+							<option value="Seychelles">Seychelles</option>
+							<option value="Singapura">Singapura</option>
+							<option value="Síria">Síria</option>
+							<option value="Sri Lanka">Sri Lanka</option>
+							<option value="St. Kitts & Nevis">St. Kitts & Nevis</option>
+							<option value="St. Lúcia">St. Lúcia</option>
+							<option value="St. Vincent">St. Vincent</option>
+							<option value="Sudão">Sudão</option>
+							<option value="Suécia">Suécia</option>
+							<option value="Suiça">Suiça</option>
+							<option value="Suriname">Suriname</option>
+							<option value="Tailândia">Tailândia</option>
+							<option value="Taiwan">Taiwan</option>
+							<option value="Tanzânia">Tanzânia</option>
+							<option value="Togo">Togo</option>
+							<option value="Trinidad & Tobago">Trinidad & Tobago</option>
+							<option value="Tunísia">Tunísia</option>
+							<option value="Turquia">Turquia</option>
+							<option value="Ucrânia">Ucrânia</option>
+							<option value="Uganda">Uganda</option>
+							<option value="Uruguai">Uruguai</option>
+							<option value="Venezuela">Venezuela</option>
+							<option value="Vietnã">Vietnã</option>
+							<option value="Zaire">Zaire</option>
+							<option value="Zâmbia">Zâmbia</option>
+							<option value="Zimbábue">Zimbábue</option>
+						</select>
+						<p id="alerta_pais" class="msg-erro"></p>
+
+						<label for="formMensagem">Mensagem</label>
+						<textarea id="formMensagem" name="formMensagem" placeholder="É o melhor player do mundo." style="height:200px" required></textarea>
+						<p id="alerta_msg" class="msg-erro"></p>
+
+						<br>
+
+						<input id="formSubmit" type="submit" value="Enviar" onclick="validarForm(event)">
+					</form>
+				</div>
+			</section>
+
+			<footer id="footer">
+				<p class="msg-rodape">&copy; infoStrike 2019. Todos os direitos reservados.</p>
+				<p class="msg-rodape">lucasmirandatws@gmail.com | (19) 99804 9531</p>
+			</footer>
+
+		</div>
+
+	</main>
+
+	<script>
+
+		document.frmContato.formNome.onchange = function(){
+			const nome = this.value;
+			if(!nome || nome.length < 3) {
+				document.getElementById('alerta_nome').textContent = 'Nome inválido!';
+			}
+			else document.getElementById('alerta_nome').textContent = null;
+		};
+
+		document.frmContato.formEmail.onchange = function(){
+			const email = this.value;
+			if(!email || email.length < 3 || !email.includes('@')) {
+				document.getElementById('alerta_email').textContent = 'E-mail inválido!';
+			}
+			else document.getElementById('alerta_email').textContent = null;
+		};
+
+		document.frmContato.formPais.onchange = function(){
+			const pais = this.value;
+			if(!pais) {
+				document.getElementById('alerta_pais').textContent = 'Escolha um país!';
+			}
+			else document.getElementById('alerta_pais').textContent = null;
+		};
+
+		document.frmContato.formMensagem.onchange = function(){
+			const msg = this.value;
+			if(!msg) {
+				document.getElementById('alerta_msg').textContent = 'Digite uma mensagem!';
+			}
+			else document.getElementById('alerta_msg').textContent = null;
+		};
+
+		function validarForm(event)
+		{
+			event.preventDefault();
+
+			var erro = false;
+
+			const nome = document.frmContato.formNome.value;
+			if(!nome || nome.length < 3) {
+				document.getElementById('alerta_nome').textContent = 'Nome inválido!';
+				erro = true;
+			}
+
+			const email = document.frmContato.formEmail.value;
+			if(!email || email.length < 3 || !email.includes('@')) {
+				document.getElementById('alerta_email').textContent = 'E-mail inválido!';
+				erro = true;
+			}
+
+			const pais = document.frmContato.formPais.value;
+			if(!pais) {
+				document.getElementById('alerta_pais').textContent = 'Escolha um país!';
+				erro = true;
+			}
+
+			const msg = document.frmContato.formMensagem.value;
+			if(!msg) {
+				document.getElementById('alerta_msg').textContent = 'Digite uma mensagem!';
+				erro = true;
+			}
+
+			if(erro == false)
+			{ 
+				alert("Mensagem enviada!");
+
+				$('#frmContato').trigger("reset");
+			}
+		}
+
+	</script>
+
+</body>
+
+</html>
